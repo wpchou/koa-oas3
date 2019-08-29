@@ -1,6 +1,6 @@
 {
   "name": "koa-oas3-wenpin",
-  "version": "0.13.1",
+  "version": "13.1.1",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
   "author": "<tli@atlassian.com>",
@@ -27,7 +27,6 @@
   "dependencies": {
     "js-yaml": "^3.12.0",
     "jsonfile": "^4.0.0",
-    "oas-validator": "^1.1.13",
     "oas3-chow-chow": "^0.14.1"
   },
   "devDependencies": {

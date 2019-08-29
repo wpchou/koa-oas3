@@ -5,7 +5,7 @@ import { openapiUI } from './openapi-ui';
 import * as jsonfile from 'jsonfile';
 import * as yaml from 'js-yaml';
 import * as fs from 'fs';
-import * as oasValidator from 'oas-validator';
+// import * as oasValidator from 'oas-validator';
 
 export { ChowError, RequestValidationError, ResponseValidationError };
 
@@ -113,9 +113,9 @@ function loadFromFile(file?: string) {
 
 function compileOas(config: Config) {
   let openApiObject: any = config.spec || loadFromFile(config.file);
-  if (!oasValidator.validateSync(openApiObject, {})) {
-    throw new Error('Invalid Openapi document');
-  }
+  // if (!oasValidator.validateSync(openApiObject, {})) {
+  //   throw new Error('Invalid Openapi document');
+  // }
   return {
     compiled: new ChowChow(openApiObject),
     doc: openApiObject,
