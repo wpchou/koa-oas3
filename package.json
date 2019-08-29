@@ -1,5 +1,5 @@
 {
-  "name": "koa-oas3",
+  "name": "koa-oas3-wenpin",
   "version": "0.13.1",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
